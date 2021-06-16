@@ -6,73 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <title>Fun with bootstrap5</title>
-    <style>
-        [class*="col"] {
-            background-color: #33b5e5;
-            color:white;
-            padding: 1rem;
-            border: 2px solid #fff;
-        }
-    </style>
 </head>
 <body class="py-5">
-    <h2 class="my-5 text-center">Example 1</h2>
-    
     <div class="container">
-        <div class="row">
-            <div class="col-sm">1</div>
-            <div class="col-sm">2</div>
-            <div class="col-sm">3</div>
+        <div>
+            <h2>Cards</h2>
+            <p>Card size is controle by styles</p>
+            <div class="card shadow" style="width: 18rem;">
+                <div class="card-body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla nisi delectus dolorum, cupiditate maiores earum illo facilis, ullam deserunt, veritatis mollitia praesentium obcaecati ipsam? Voluptatibus distinctio earum in quae ipsa.
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-sm">1</div>
-            <div class="col-sm">2</div>
+        <div class="py-5">
+            <h2>Card size is controled by bootstrap5 grid</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cumque odit, dolorem placeat voluptatem quos corporis qui! Soluta delectus, maiores qui nobis excepturi aliquam harum blanditiis ad distinctio quasi architecto.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-5">
+            <h2>Card with image</h2>
+            <div class="card my-3 shadow-lg" style="width: 18rem;">
+                <img src="./card.jpg" alt="mobile" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Card title
+                    </h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam exercitationem magni quisquam similique quas eos corporis officiis repudiandae sunt, debitis, itaque sequi aperiam enim ratione, quidem nihil sint expedita placeat?</p>
+                </div>
+            </div>
+        </div>
+        <div class="py-5">
+            <h2>Horizontal image card</h2>
+            <div class="card" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./card.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, quod fuga? Maiores, error quibusdam earum iusto neque debitis libero, eligendi voluptatibus accusamus delectus minima quia necessitatibus, consequuntur quae dolore esse.</p>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-5">
+            <h2>Card with header and footer</h2>
+            <div class="card my-3 shadow-sm" style="width: 18rem;">
+               <div class="card-header">Featured</div>
+               <div class="card-body">
+                   <h5 class="card-title">
+                       Special tilte treatement
+                   </h5>
+                   <p class="card-text">With supporting text below as a naturel lead into additional content.</p>
+               </div>
+            </div>
         </div>
     </div>
-
-    <h2 class="my-5 text-center">Example 2</h2>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">Main Content</div>
-            <div class="col-md-4">Sidebar</div>
-        </div>
-    </div>
-
-    <h2 class="my-5 text-center">Example 3</h2>
-    <div class="container">
-        <div class="row">
-            <div class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12</div>
-            <div class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12</div>
-            <div class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12</div>
-            <div class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12</div>
-            <div class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12</div>
-            <div class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12</div>
-            <div class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12</div>
-            <div class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12</div>
-            <div class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12</div>
-            <div class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12</div>
-            <div class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12</div>
-            <div class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12</div>
-        </div>
-    </div>
-
-    <h2 class="text-center my-5">Gutter</h2>
-    <div class="container">
-        <div class="row gx-5 gy-3">
-            <div class="col-6">1</div>
-            <div class="col-6">2</div>
-            <div class="col-6">3</div>
-            <div class="col-6">4</div>
-
-        </div>
-    </div>
-
-
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="./js/bootstrap.js"></script>
